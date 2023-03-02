@@ -1,0 +1,126 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.head {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+body {
+    height: 100vh;
+    background-color: grey;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#p1win img {
+    width: 10rem;
+}
+
+#p2win img {
+    width: 10rem;
+}
+
+#p1win {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 4rem;
+    color: rgb(55, 239, 55);
+}
+
+#p2win {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 4rem;
+    color: rgb(55, 239, 55);
+}
+
+.startbtn button {
+    font-size: 3rem;
+    padding: 1.5rem 2rem;
+    border-radius: 2rem;
+    border: none;
+    color: green;
+    background-color: yellow;
+    cursor: pointer;
+}
+
+.result {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 4rem 0;
+}
+
+.result img {
+    width: 12rem;
+    background-color: white;
+    border-radius: 1.6rem;
+}
+
+.p1res {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    font-size: 2rem;
+}
+
+.p1res h1 {
+    margin-bottom: 2rem;
+}
+
+.p2res {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    font-size: 2rem;
+}
+
+.p2res h1 {
+    margin-bottom: 2rem;
+}
+
+.winner {
+    font-size: 2.5rem;
+    color: yellow;
+    position: fixed;
+    margin-top: 38rem;
+    margin-left: 32rem;
+    text-align: center;
+}
+
+@media (max-width:450px) {
+    .result img {
+        width: 5rem;
+        border-radius: 0.8rem;
+    }
+
+    .p1res,
+    .p2res {
+        font-size: 1.3rem;
+    }
+
+    .startbtn button {
+        font-size: 2rem;
+        padding: 1rem 2.5rem;
+    }
+
+    .winner {
+        font-size: 2rem;
+    }
+
+    #p1win {
+        font-size: 2.5rem;
+    }
+
+    #p2win {
+        font-size: 2.5rem;
+    }
+}
